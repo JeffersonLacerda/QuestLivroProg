@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.mycompany.aprendendo;
+package com.mycompany.questlivroprogr;
 
 /**
  *
@@ -36,34 +36,7 @@ public class Principal {
 //        prog2Vol2Pag61.quest01();
 //        prog2Vol2Pag61.quest07();
         
-        //Executando questões do vol.3 página 26
-        //5)
-        Prog2Vol3Pag26Produto produto1 = new Prog2Vol3Pag26Produto(), produto2= new Prog2Vol3Pag26Produto(), produto3= new Prog2Vol3Pag26Produto();
-        Prog2Vol3Pag26Fornecedor forn1 = new Prog2Vol3Pag26Fornecedor(), forn2 = new Prog2Vol3Pag26Fornecedor();
-        
-        produto1.codigo=1;
-        produto1.nome="TV LCD";
-        produto1.valor=3500;
-        produto2.codigo=2;
-        produto2.nome="Notebook";
-        produto2.valor=2000;
-        produto3.codigo=3;
-        produto3.nome="Impressora";
-        produto3.valor=232;
-        
-        forn1.CNPJ="1234321";
-        forn1.nome="Zé Maria";
-        forn2.CNPJ="543212345";
-        forn2.nome="Cláudio";
-        
-        //6)
-        produto1.atualizarPreco(15);
-        produto2.atualizarPreco(15);
-        System.out.println("Produto 01: "+produto1.valor);
-        System.out.println("Produto 02: "+produto2.valor);
-        //
-        
-        
+
     }
     
 }
