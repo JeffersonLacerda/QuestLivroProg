@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package prog2vol3pag26e42;
+package Prog2Vol3Pag26e42;
 
 import prog2vol3pag26e42.Fornecedor;
 import prog2vol3pag26e42.Produto;
@@ -14,36 +14,29 @@ public class TesteProduto {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-                
-        Produto produto1 = new Produto();
-        Produto produto2 = new Produto();
-        Produto produto3 = new Produto();
-    
-        Fornecedor fornecedor1 = new Fornecedor();
-        Fornecedor fornecedor2 = new Fornecedor();
         
-        produto1.setCodigo(1);
-        produto1.setNome("TV LCD");
-        produto1.setValor(3500);
-        produto2.setCodigo(2);
-        produto2.setNome("Notebook");
-        produto2.setValor(2000);
-        produto3.setCodigo(3);
-        produto3.setNome("Impressora");
-        produto3.setValor(232);
-
-        fornecedor1.setCnpj("1234321");
-        fornecedor1.setNome("Zé Maria");
-        fornecedor2.setCnpj("543212345");
-        fornecedor2.setNome("Cláudio");
+        System.out.println("O preço máximo de um produto é: "+Produto.getVALOR_MAXIMO());
         
-        //6)
+        Fornecedor fornecedor1 = new Fornecedor("1234321", "Zé Maria");
+        Fornecedor fornecedor2 = new Fornecedor("543212345", "Cláudio");
+        
+        //7º)pág. 42
+        Produto.getMediaValor();
+        
+        Produto produto1 = new Produto(1, "TV LCD", 3500, fornecedor1);
+        Produto produto2 = new Produto(2, "Notebook", 200, fornecedor2);
+        Produto produto3 = new Produto(3, "Impressora", 232, fornecedor2);
+        
+        //7º)pág. 42
+        Produto.getMediaValor();
+        
+        //6)pág.26
         produto1.atualizarPreco(15);
         produto2.atualizarPreco(15);
+        produto3.atualizarPreco(15);
         System.out.println("Produto 01: "+produto1.getValor());
         System.out.println("Produto 02: "+produto2.getValor());
-        
-
+        System.out.println("Produto 03: "+produto3.getValor());
     }
     
 }
